@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   font-family: helvetica,Arial,sans-serif;
+}
+body{
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
+.item{
+    color: #333;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+   max-width: 1300px;
+     margin: 0 auto;
+     border-radius: 10px;
+     overflow: hidden;
+}
+.flex-container{
+    display: flex;
+    background-color: #f4f4f4;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.flex-container::after{
+    content: '';
+    clear: both;
+    display: block;
+    flex-wrap: wrap;
+    }  
+.item:nth-last-of-type(1){
+    flex-grow: 1;
+}
+.item:nth-last-of-type(2){
+    flex-grow: 2;
+}
+            
+       
+        #left {
+            background: linear-gradient(to bottom, #2c3e50, #4a6491);
+            color: white;
+            width: 35%;
+            padding: 30px;
+            min-height: 100%;
+        }
+        
+        #left h2 {
+            color: #fff;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        
+        #left .section {
+            margin-bottom: 30px;
+        }
+        
+        #left p, #left a {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        
+        #left a {
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+            word-break: break-all;
+        }
+        
+        #left a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        #right {
+            background-color: #fff;
+            width: 65%;
+            padding: 40px;
+        }
+        
+        #right h1 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        #right h2 {
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #4a6491;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        
+      
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f6fc;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        
+        ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        ul li {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        ul li:before {
+            content: "•";
+            color: #4a6491;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+       
+        @media (max-width: 992px) {
+            #left, #right {
+                width: 100%;
+            }
+            
+            #left {
+                order: 2;
+            }
+            
+            #right {
+                order: 1;
+            }
+        }
+        
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), #4a6491, rgba(0, 0, 0, 0));
+            margin: 20px 0;
+        }
+        
+        .title {
+            color: #4a6491;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .contact-info {
+            margin-top: 10px;
+        }
+        
+      
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            
+           
+            }
+            
+            #left {
+                background: #2c3e50 ;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            a {
+                text-decoration: none ;
+                color: #fff ;
+            }
+        
+
+    

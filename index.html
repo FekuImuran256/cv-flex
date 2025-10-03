@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>FEKU IMURAN</title>
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   font-family: helvetica,Arial,sans-serif;
+}
+body{
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
+.item{
+    color: #333;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+   max-width: 1300px;
+     margin: 0 auto;
+     border-radius: 10px;
+     overflow: hidden;
+}
+h2{
+    text-align: center;
+    font-family: new roman;
+  
+   border-bottom:#4a6491 solid ; 
+}
+.flex-container{
+    display: flex;
+    background-color: #f4f4f4;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     max-width: 1200px;
+}
+.flex-container::after{
+    content: '';
+    clear: both;
+    display: block;
+    flex-wrap: wrap;
+    }  
+.item:nth-last-of-type(1){
+    flex-grow: 1;
+}
+.item:nth-last-of-type(2){
+    flex-grow: 2;
+}
+            
+       
+        #left {
+            background: linear-gradient(to bottom, #2c3e50, #4a6491);
+            color: white;
+            width: 35%;
+            padding: 30px;
+            min-height: 100%;
+        }
+        
+        #left h2 {
+            color: #fff;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        
+        #left .section {
+            margin-bottom: 30px;
+        }
+        
+        #left p, #left a {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        
+        #left a {
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+            word-break: break-all;
+        }
+        
+        #left a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        #right {
+            background-color: #fff;
+            width: 65%;
+            padding: 40px;
+        }
+        
+         h1 {
+            font-family:' New Roman';
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        
+        #right h2 {
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #4a6491;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        
+      
+        .profile-img {width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            display: block;
+           
+        }
+        
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f6fc;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        
+        ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        ul li {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        ul li:before {
+            content: "•";
+            color: #4a6491;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+       
+        @media (max-width: 500px) {
+            #left, #right {
+                width: 100%;
+            }
+            
+            #left {
+                order: 2;
+            }
+            
+            #right {
+                order: 1;
+            }
+        }
+        
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), #4a6491, rgba(0, 0, 0, 0));
+            margin: 20px 0;
+        }
+        
+        .title {
+            color: #4a6491;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .contact-info {
+            margin-top: 10px;
+        }
+        
+      
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            
+           
+            }
+            
+            #left {
+                background: #2c3e50 ;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            a {
+                text-decoration: none ;
+                color: #fff ;
+            }
+        
+.left{
+    background-color: #232323;
+    color: #FBF8F3;
+    height: 1000px;
+    padding: 20px;
+    margin: 5px;
+
+}
+.right{
+    background-color: #FBF8F3;
+   color: #232323;
+}
+   </style>
+   </head>
+<body>
+    <div class="flex-container">
+        <div class="item 1,">
+          
+            <div class="left">
+                <img src="./image/image.jpg" alt="" class="profile-img">
+                
+                <div class="contact section">
+                    <h2>CONTACT</h2>
+                    <div class="contact-info">
+                        <p><a href="mailto:fekuimran3@gmail.com">fekuimran3@gmail.com</a></p>
+                        <p><a href="https://wa.me/256789272129">WhatsApp: 0789272129</a></p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>COMMUNICATION</h2>
+                    <p>I have received certificate in public speaking for my <br>outstanding communication skills.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>LEADERSHIP</h2>
+                    <p>I have been awarded several certificates for my good leadership <br>which includes certificate of appreciation for being the Disciplinary prefect<br> acquired in 2018 and certificate of appreciation for being the Imam of the school acquired in 2024.</p>
+                </div>
+            </div> </div>
+       <div class="item 2">
+        <div class="right">
+                <h1>FEKU IMURAN</h1>
+                <hr>
+                <p class="title"><strong>Student & Skilled Technician</strong></p>
+                
+                <div class="section">
+                    <h2>EDUCATION</h2>
+                    <table>
+                        <tr>
+                            <th>YEAR</th>
+                            <th>INSTITUTION</th>
+                            <th>AWARD</th>
+                        </tr>
+                        <tr>
+                            <td>2025-2028</td>
+                            <td>Muni University</td>
+                            <td>Bachelors of Information System</td>
+                        </tr>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>Metu Secondary School</td>
+                            <td>Uganda Advanced Certificate of Education</td>
+                        </tr>
+                        <tr>
+                            <td>2017-2022</td>
+                            <td>Biyaya Secondary School</td>
+                            <td>Uganda Certificate of Education</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="section">
+                    <h2>EXPERIENCE</h2>
+                    <ul>
+                        <li>
+                            <strong>Skilled Technician | General Practice | KIMTECH SERVICES Juba</strong><br>
+                            Dec 2020 - Jan 2022
+                        </li>
+                        <li>
+                            <strong>Skilled Technician | General practice | Global Electronics Moyo</strong><br>
+                            Nov 2024 - July 2025
+                        </li>
+                    </ul>
+                    <p>I have a proven track record of delivering high quality repair service to customers as well as ensuring safety of their devices as it waits for their pickup after servicing.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>REFERENCES</h2>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Tel</th>
+                        </tr>
+                        <tr>
+                            <td>MR. Ojjhara Micheal</td>
+                            <td>Head Teacher Metu SS</td>
+                            <td>+256782827093</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+      </div>
+    </div>
+           
+</body>
+</html>
